@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustoso Bakery App</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/kke5ylx.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="https://use.typekit.net/kke5ylx.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/54d38a1610.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+  <header id="site-header" class="background fixed-top">
+    <div class="container-fluid px-2">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/Gustoso copy.png" alt="logo" class="img-fluid" style="max-height: 40px;">
+        </a>
+  
+        <!-- Navbar Toggler Button for Mobile View -->
+        <button  class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+  
+        <!-- Navbar Links (Collapsible on Mobile) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">WELCOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESERVATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTS</a>
+            </li>
+          </ul>
+  
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="javascript:" class="social-icon">
+              <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </a>
+            <a href="javascript:" class="social-icon">
+              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+     <!-- <header id="site-header" class=" background fixed-top ">
+     <div class="container-fluid px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="logo ">
+            <img src="./assets/img/Gustoso copy.png" alt="logo" class="img-fluid"  style="max-height: 50px;">
+          </div>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <a  class="nav-toggle" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"><i class="bi bi-justify"></i>
+              <i class="fas fa-bars text-black"></i>
+            </button>
+            <div class="nav-col d-none d-lg-block col-6 col-lg-9">
+                <nav class="navbar-nav flex-row ">
+                    <div class="container">
+                       <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">WELCOME</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">MENU</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">RESERVATIONS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">NEWS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">CONTACTS</a>
+                          </li>
+                        </ul>
+                        <div class=" col-6 col-md-4">
+                          <div class="social">
+                           <span class="fa">
+                            <a href="javascript:" class="social-icon">
+                              <i class="fa-brands fa-twitter " style="color: #ffffff;"></i>
+                             </a>
+                             <a href="javascript:" class="social-icon">
+                              <i class="fa-brands fa-facebook " style="color: #ffffff;"></i>
+                             </a>
+                             <a href="javascript:" class="social-icon">
+                              <i class="fa-brands fa-instagram " style="color: #ffffff;"></i>
+                            </a>
+                           </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="btn-col col-3 col-lg-2"></div>
+        </div>
+     </div>
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">NAVIGATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+       <nav class="navbar ">
+         <div class="container-fluid">
+             <ul class="navbar-nav text-uppercase vol">
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">HOME</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">ABOUT</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">Dashboard</a>
+               </li>
+               <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+              </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">TEAM</a>
+               </li>
+             </ul>
+         </div>
+       </nav>
+       <div class="footer-social offcanvas-social">
+         <a href="javascript:" class="social-icon">
+           <i class="bi bi-facebook"></i>
+          </a>
+          <a href="javascript:" class="social-icon">
+           <i class="bi bi-twitter"></i>
+          </a>
+          <a href="javascript:" class="social-icon">
+           <i class="bi bi-instagram"></i>
+         </a>
+       </div>
+ </div>
+</div>
+    </header> -->
+
+
+   
+    
+    <section id="hero-section" class="Featured-section">
+      <div class="h-100 background-image-1"></div>
+      <div class="background-image-2"></div>
+      <div class="container h-100">
+        <div class="  row h-100 align-items-center text-center ">
+          <div class="hero-content mx-auto">
+          <h3  class=" main-heading">
+            <div style="margin-left: -150px;" class="custom">
+              <span class="box"></span>  
+              <span class="hi">Pastry with</span>
+            <span class="text " style="position: absolute;" ></span>
+            <span  style="left: 100px;" class="cursor">_</span>
+            </div>
+            
+          </h3>
+          <h4 class="centre">We're bringing you fresh ingredients every days<br> in ways You can't resist</h4>
+          <button class="menu-btn Alegreya">OUR MENU</button>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <section id="Cake-art-section" class="Non-Featured-section">
+    <div class="circle">
+      <img src="./assets/img/Vektor-Smartobjekt copy.png"></div>
+      <img class="circle-img circle-hover" src="./assets/img/Vektor-Smartobjekt.png">
+    
+    
+    <div class="section2">
+      <div class="sub-section1">
+        <h2 class=" col-6 Alegreya Art-heading">Art Of Cakes</h2>
+        <h6 class="Alegreya mem-heading">WE CREATE DELICIOUS MEMORIES</h6>
+        <p class="proxima">Welcome to Art Of Cakes, where every confectionery creation is a masterpiece in<br> taste and design. At Art Of Cakes, we specialize in crafting not just cakes, but an<br>  unforgettable experiences. Our passion for baking goes beyond simply mixing <br>ingredients; it's about capturing the essence of celebration <br> 
+        <div class="mble-resp">
+          <h5 class="Chef Alegreya">Chef Cook</h5>  
+          <img class="rounded-img" src="/assets/img/chef ing.png">
+          <div class="chef-style">
+            <hr class="custom-line">
+            <h4 class="Alegreya Pic-heading1">Gaspare</h4>
+            <hr class="custom-line2">
+            <hr class="custom-line-3"> 
+            <hr class="custom-line-4">
+            <h4 class="Alegreya Pic-heading2">Benito</h4>
+            <span>
+             <img class="formward" src="/assets/img/“.png" alt="Description of the image">
+             <img class="backward"  src="/assets/img/”.png" alt="Description of the image">
+
+           </span>
+            <p class="Scriptina-text">Unique Creations for unique ocassions </p>
+           
+         </div>
+        </div>
+       
+      </div>
+        <div class="col-3 col-lg-5">
+          <img class="sub-section2 img-fluid" src="/assets/img/images copy.png">
+        </div>
+    </div>
+    </section>
+    <section id="Pancake-section" class=" container-fluid p-0 ImFeatured-section">
+    <div class="sec-top">
+     <div class="col-6 col-lg-5 stat-col">
+      <img class="img-pan" src="/assets/img/widget_bg copy.png">
+          <div class="pancake-text-sec">
+            <h2 class="Alegreya head-1" >Tasty Pancakes</h2>
+            <h5 class="Alegreya head-2">SEASON FAVOURITE</h5>
+            <p class="para">Maecenas nec odio et ante tincidunt tempus. Donec vitae <br>Maecenas nec odio et ante tincidunt . Donec vitae <br> Maecenas nec odio et ante tincidunt tempus<br></p>
+          </div>
+          <div class="pancake-img">
+            <img src="/assets/img/Section-3 ing copy.png">
+          </div>
+  </div>     
+     </div>
+     <span class="bakgrnd-windmill"><img  src="/assets/img/Vektor-Smartobjekt windmill.png"></span>
+     <div class="pancake-container">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+         -->
+         <div class="carousel-inner">
+          <div class=" img1 carousel-item active">
+            <img src="/assets/img/carouselimg.png" alt="Pancake 1">
+          </div>
+          <div class="img2 carousel-item">
+            <img  src="/assets/img/carousel-img2.png" alt="Pancake 2">
+          </div>
+          <div class="img3 carousel-item ">
+            <img  src="/assets/img/carousel-img3.png" alt="Pancake 3">
+          </div>
+        </div>
+          <div class="carousel-control">
+            <button style="transform: translateX(-710px);" class="prev mt-2"><i class="fa-solid fa-angle-left" style="color: #fcfcfc;"></i></button>
+            <button style="transform: translateX(-320px);" class="next"><i class="fa-solid fa-angle-right" style="color: #fcfcfc;"></i></button>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="Section-4">
+      <div class="bg-img">
+      <div class="muffin-text">
+        <h1 class="fe-5 Alegreya sec-4-text1 "> Breakfast</h1>
+        <h5 class=" Alegreya sec-4-1text"> 7AM BREAKFAST?WE'RE OPEN!</h5>
+        <span class="fe-5 Alegreya sec-text">Full breakfast</span>
+         <p class=" Alegreya para2">we Are Providing Full Breakfast lunch and Dinner</p>
+         <span class="fe-5 Alegreya Dollar">$12.49</span>
+         <span class="fe-5 Alegreya sec-text2">Toast & Jam</span>
+         <p class="Alegreya para2 " style="margin-top: 68px; margin-left: 30px;">Freshly Baked Toast and Flavoufull Jam</p>
+         <span class="fe-5 Alegreya Dollar" >$4.90</span>
+         <span class="fe-5 Alegreya sec-text2"style=" margin-left: 30px; margin-bottom:-20px ;" >Muffins</span>
+         <p class=" Alegreya para2 " style="margin-top: 78px; margin-left: 70px; ">Freshly Baked Muffins</p>
+      </div>
+       <div class="subsections">
+        <div id="sub-sec-2" class="sub-section4">
+          <div class="head-text">
+            <h5 class="sec-4-heading1 Alegreya">EST</h5>
+            <h5 class="sec-4-heading2 Alegreya">1983</h5>
+          </div>
+          <div class="linegraphics">
+            <hr class="cs-width custom-line-5">
+            <img class="cs-margin fruitgrape-img3" src="/assets/img/se-4 fruitgrape.png">
+            <hr class="cs-width custom-line-6">
+          </div>
+          <div class="mid-text">
+            <h5 class="sec-4-heading3 Alegreya"><span class="custom-sec-4">Your morning<br></span> Escape with Flair</h5>
+            <p class="cs-text sec-4-text">A delightful and stylish start to the day. It implies a sense of luxury and sophistication, making it an ideal <br>choice for promoting a high-end or luxurious brand.</p>
+            <button class="cs-btn Alegreya" style="background-color: transparent;
+            opacity: 0.65;
+            color: #a98d49;
+            border: 1px solid #514e4b;
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px;
+            margin-top:  10px;
+            margin-left: 110px;
+            width: 28%;">READ</button>
+          </div>
+         </div>
+      
+          <div class="sub-section5">
+            <div class="head-text1">
+              <h5 class="sec-4-heading1 Alegreya">EST</h5>
+              <h5 class="sec-4-heading2 Alegreya">1983</h5>
+            </div>
+            <div class="linegraphics2">
+              <hr class="cs-width custom-line-6">
+              <img class="cs-margin fruitgrape-img4" src="/assets/img/se-4 fruitgrape.png">
+              <hr class="cs-width custom-line-7">
+            </div>
+            <div class="mid-text1">
+              <h5 class="fe-5 sec-4-heading3 Alegreya">Your morning <br> Escape with Flair</h5>
+              <p class="cs-text sec-4-text">A delightful and stylish start to the day. It implies a sense of luxury and sophistication, making it an ideal <br>choice for promoting a high-end or luxurious brand</p>
+              <button class="cs-btn Alegreya" style="background-color: transparent;
+              opacity: 0.65;
+              color: #a98d49;
+              border: 1px solid #514e4b;
+              letter-spacing: 3px;
+              font-size: 14px;
+              font-weight: 600;
+              padding: 8px;
+              margin-top:  10px;
+              margin-left: 110px;
+              width: 28%;">READ</button>
+            </div>
+           </div>
+           <div id="sub-section" class="sub-section6">
+          <div class="upprline" >
+
+            <div class="">
+              <h5 class="sec-4-heading1 Alegreya">EST</h5>
+              <h5 class="sec-4-heading2 Alegreya">1983</h5>
+            </div>
+            <div class="flex-shrink-1 linegraphics2">
+              <hr class="custom-line-9 cs-width">
+              <img class="cs-margin fruitgrape-img8" src="/assets/img/se-4 fruitgrape.png">
+              <hr class="cs-width custom-line-10">
+            </div>
+          </div>
+            <div class="mid-text1">
+              <h5 class="fe-5 sec-4-heading3 Alegreya">Your morning <br> Escape with Flair</h5>
+              <p class="cs-text sec-4-text">A delightful and stylish start to the day. It implies a sense of luxury and sophistication, making it an ideal <br>choice for promoting a high-end or luxurious brand</p>
+              <button class="Alegreya cs-btn" style="background-color: transparent;
+            opacity: 0.65;
+            color: #a98d49;
+            border: 1px solid #514e4b;
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px;
+            margin-top:  10px;
+            margin-left: 110px;
+            width: 28%;">READ</button>
+            </div>
+           </div>
+          </div>   
+      </div>
+    </section>
+
+  <section class="Section-5">
+    <div class="subsection1 bgrnd img-fluid">
+      <h2 class="fs-3 Sandwitch Alegreya jibarito">The Jibarito Sandwich </h2>
+      <h4 class="Alegreya txt sandwitch-txt ">THE BEST SANDWITCH YOU HAVE EVER TASTED!</h4>
+    </div>
+   <div>
+     <div id="page2" class="Jibarito-sandwich jibarito-resp">
+      <img  class="img-fluid" src="./assets/img/sandwich-pic.png">
+      <div style="position: relative;" class="outer-btn">
+        <button class="reciepe-btn" style=" background-color: #ffffff; font-weight: bold; height: 48px; width: 150px; border: 1px solid gray; letter-spacing: 1px; margin-left: 540px; color: #dfc691" type="button" class=" Alegreya btn-outline-secondary open-btn" id="open-btn">FULL RECIPE</button>
+        <dialog id="my-dialog" tabindex="0">
+            <form method="dialog" >
+              <div class="Container">
+                <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/DInEePljD-w?si=MAeGrq0BuinP3i8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h2>Jibarito-sandwich Recipe</h2>
+              <p>
+                The Jibarito sandwich, a Puerto Rican dish, replaces bread with fried green plantains and typically includes steak,<br> garlic mayo, lettuce, tomato, and cheese. Here’s how you can make it</p>
+                <p>
+                 
+                  <h4>Ingredients:<br></h4>
+                  2 large green plantains<br>
+                  Vegetable oil for frying<br>
+                  Salt to taste<br>
+                  For the Steak Filling:<br>
+                  1 lb steak<br>
+                  2 cloves garlic, minced<br>
+                  1/2 cup mayonnaise<br>
+                 <h5>Instructions:<br></h5>
+                  Prepare the Plantains:<br>
+                  Peel the plantains and cut them in half lengthwise.<br>
+                  Heat vegetable oil in a deep pan over medium heat.<br>
+                  Fry the plantain halves until they are golden, about 2-3 minutes per side.<br>
+                  Remove the plantains and drain on paper towels.<br>
+                  Flatten the fried plantain halves using a flat surface or the bottom of a heavy pan.<br>
+                  Return the flattened plantains to the oil and fry until crispy, another 2-3 minutes per side.<br> Drain on paper towels and season with salt.</p><br>
+              <menu>
+                <!-- <button id="close" type="button" class="btn btn-primary btn-sm">Close</button> -->
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" id="close" type="button">Close</button>
+                </div>
+              </menu>
+            </form>
+        </dialog>
+    </div>
+  </div>
+  </div>
+   <div class="box-container">
+    <div id="box" class="box-inner stat-inner">
+      <span class=" Alegreya number" data-value="15">PREP</span>
+      <span class=" Alegreya update-num">15</span>
+      <span class=" Alegreya update-num-2">mins</span>
+      
+    </div>
+    <div id="box" class="stat-inner2">
+      <span class=" Alegreya number2" data-value="15">COOK</span>
+      <span class=" Alegreya update-num2">15</span>
+      <span class=" Alegreya update-num-3">mins</span>  
+    </div>
+    <div id="box" class="stat-inner3">
+      <span class=" Alegreya number3" data-value="15">READY IN</span>
+      <span class=" Alegreya update-num3">50</span>
+      <span class=" Alegreya update-num-4">mins</span>  
+    </div>
+   </div>
+      
+      <div class="mainside-bar">
+        <div class="side-bar ">
+          <div class="col-4">
+            <img class="img1 img-fluid" src="/assets/img/side-bar img1.png">
+            <img  class="side-img2 img2  img-fluid" src="/assets/img/side-bar img2.png">
+            <img  class="sidebar-img3 img3 ms-5 img-fluid" src="/assets/img/side-bar img3.png"> 
+           </div>
+          </div>
+         <div class="side-bartext">
+          <h4 class="fs-3 Alegreya texty fw-bold">Class aptent</h4>
+          <p class="siddebar side-br-text">Quot alienum persecuti ut eam, nam ad<br><span class="ms-4">ad atqui primis nusquam.</span></p>
+          <h4 class="fs-3 Alegreya texty1 ms-4 fw-bold pt-0">Farm Eggs</h4>
+          <p style="position: relative; top:15px" class="ms-4.5 side-br-text my-5 pt-5"> alienum persecuti ut eam, name primis<br><span class="ms-4">ad atqui primis nusquam.</span></p>
+          <h4  class="fs-3 Alegreya texty1 ms-3.5 fw-bold pt-0">Bakery Cheese</h4>
+          <p  style="position: relative; top: 50px; right: 108px;" class="sidebrimg-3 ms-5 side-br-text my-5 pt-5">Quot alienum persecuti ut eam, nam<span class="ms-4">ad atqui primis nusquam.</span></p>
+        
+         </div>
+       </div>
+      </div>
+      <!-- <div class="side-bar ">
+        <img class="img1" src="/assets/img/side-bar img1.png">
+        <img  class="img2" src="/assets/img/side-bar img2.png">
+        <img  class="img3" src="/assets/img/side-bar img3.png"> 
+       </div>
+       <div class="side-bartext">
+        <h4 class=" Alegreya texty fw-bold">Class aptent</h4>
+        <p class=" side-br-text">Quot alienum persecuti ut eam, nam ad<br><span class="ms-4">ad atqui primis nusquam.</span></p>
+        <h4 class=" Alegreya texty1 ms-4 fw-bold pt-0">Farm Eggs</h4>
+        <p style="position: relative; top:15px" class="ms-4.5 side-br-text my-5 pt-5"> alienum persecuti ut eam, name primis<br><span class="ms-4">ad atqui primis nusquam.</span></p>
+        <h4  class=" Alegreya texty1 ms-3.5 fw-bold pt-0">Bakery Cheese</h4>
+        <p  style="position: relative; top: 50px; right: 108px;" class="ms-5 side-br-text my-5 pt-5">Quot alienum persecuti ut eam, nam<br><span class="ms-4">ad atqui primis nusquam.</span></p>
+       </div>
+     </div> -->
+    <footer class="ms-3 sec-footer resp-footer">
+     <div class="container">
+     <div class="row">
+      <div class="col-12 Web-footer ">
+        <div class="gustoso-img">
+          <!-- <img src="/assets/img/Gustoso copy.png" class="footer-img ms-5  img-responsive"> -->
+          <p class="Scriptina-font">Gustoso</p>
+          <hr class="footer-custom-line">
+          <hr class="mb-5  footer-custom-line2">
+          <h5 style="transform: translateX(170px); color: #7a786d; margin-top: -1105px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">OUR MENU  -</h5>
+        </div>
+         <h5 style="position:absolute; transform: translateX(320px); color: #7a786d; margin-top: -992px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">GALLERY -</h5>
+        <h5 style="position:absolute; transform: translateX(460px); color: #7a786d; margin-top: -992px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">GALLERY -</h5>
+        <div class="footer-custom-line3">
+          <hr class="footer-custom-line3">
+          <h5 style="position:absolute; transform: translateX(520px); color: #7a786d; margin-top: -506px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">EVENTS-</h5>
+          <hr class="footer-custom-line4">
+          <h5 style="position:absolute; transform: translateX(650px); color: #7a786d; margin-top: -522px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">CATERING -</h5>
+          <h5 style="position:absolute; transform: translateX(800px); color: #7a786d; margin-top: -522px; font-size: 10pt; width: 250px; letter-spacing: 3px;" class=" ms-3.5 Alegreya">VISIT US-</h5>
+    
+        </div>
+      </div>
+    </div>
+   </div>
+   </footer>
+     
+  </section>
+   <!-- <section class="sec-end">
+    <div class="sub-sec">
+      <img src="/assets/img/carousel-img2.png">
+      
+
+    </div> -->
+
+   </section>
+  </div>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/Js/products.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js" integrity="sha512-3fpVLQYwQDyh4nGvxqsfPhUm54etykvg0NRmilMBePJzl3P8BKCrEvR1pIZ5yyct6XROVYtKI2eaT54heI2CfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/Js/gsap.js"></script>
+<script type="module" src="/assets/Js/Ether.js"></script>
+<style>
+  #site-header {
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #a47d5e;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+</style>
+</html>
